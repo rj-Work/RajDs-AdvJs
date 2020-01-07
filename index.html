@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>index</title>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#login").click(function(){
+        $("#authDisplayArea").load("login.html");
+    });
+});
+
+$(document).ready(function(){
+    $("#sign").click(function(){
+        $("#authDisplayArea").load("signup.html");
+    });
+});
+</script>
+</head>
+<body>
+    <header style="height: 100px; width: 100%; background-color: skyblue; text-align: center;">Adobe User Admin Portal</header>
+    <main style="height:500px;">
+        <section id="authControlSection">
+            <button id="login">Login</button>
+            <button id="sign">Sign Up</button>
+        </section>
+        <section id="authDisplayArea">
+
+
+        </section>
+    </main>
+    <footer style="height: 100px; width: 100%; background-color: skyblue; text-align: center;">Contact us @adobe.com </footer>
+    
+</body>
+</html>
